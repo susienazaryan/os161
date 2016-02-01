@@ -316,8 +316,7 @@ file      ../common/libc/string/strtok_r.c
 ########################################
 
 #
-# Thread system
-#
+# Thread system#
 
 file      thread/clock.c
 # UW Mod
@@ -443,6 +442,17 @@ optfile net	test/nettest.c
 # UW Mod
 file    test/uw-tests.c
 
+# Thread test code
+file	test/threadfun.c
+
+#Thread test code for unsafecounter
+file		test/threadfunc.c
+
+#Thread test code for safecounter
+file		test/threadfuns.c
+
+#Thread test code for lockcounter
+file		test/threadfunl.c
 
 # UW options for different assignments
 defoption A0

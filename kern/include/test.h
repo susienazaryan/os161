@@ -50,6 +50,16 @@ int catmouse(int, char **);
 /* for hello.c */
 int hello(void);
 
+/* for threadfun test */
+int threadtest4(int, char **);
+int threadtest5(int, char **);
+
+/*for safe threadfun test*/
+int threadtest6(int, char **);
+
+/*for thread test with lock*/
+int threadtest7(int, char **);
+
 /* lib tests */
 int arraytest(int, char **);
 int bitmaptest(int, char **);

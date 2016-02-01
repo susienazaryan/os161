@@ -212,3 +212,4 @@ kmain(char *arguments)
 
 	/* Should not get here */
 }
+

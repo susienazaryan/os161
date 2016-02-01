@@ -4,8 +4,6 @@
 #include <synch.h>
 #include <test.h>
 
-#define VNAME 10
-
 static struct semaphore *tsem = NULL;
 
 static void init_sem(void)
@@ -20,20 +18,22 @@ static void init_sem(void)
 
 }
 
+
 static void mythread(void *junk, unsigned long num) {
 	int ch = '0' + num;
 	int i;
 
+
 	(void)junk;
 
-	for( i=0; i<100; i++) {
+	for( i=0; i<100; i++){
 		putch(ch);
 	}
 
 	V(tsem);
 }
 
-static void threadfun( ) {
+static void threadfun( int VNAME ) {
 	char name[16];
 	int i, result;
 
@@ -51,11 +51,15 @@ static void threadfun( ) {
 	}
 }
 
-int threadtest4( ) {
+int threadtest4(int nargs, char **args ) {
+
+	(void)nargs;
+
+	int VNAME = atoi(args[1]);
 
 	init_sem();
 	kprintf("starting thread test...\n");
-	threadfun();
+	threadfun(VNAME);
 	kprintf("\nThread test done.\n");
 
 	return 0;
