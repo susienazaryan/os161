@@ -454,6 +454,9 @@ file		test/threadfuns.c
 #Thread test code for lockcounter
 file		test/threadfunl.c
 
+#Thread test code for spinlock
+file		test/threadfunsl.c
+
 # UW options for different assignments
 defoption A0
 defoption A1

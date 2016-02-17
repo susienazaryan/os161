@@ -40,11 +40,11 @@ static void mythread4(void *junk, unsigned long num) {
 	int upperBound = (int) num;
 	int i;
 	
-	lock_acquire(lock);
 	for( i=0; i<upperBound; i++){
+	lock_acquire(lock);
 	lockcounter++;
-	}
 	lock_release(lock);
+	}
 	V(tsem);
 }
 

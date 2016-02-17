@@ -36,12 +36,12 @@ static void mythread3(void *junk, unsigned long num) {
 	int upperBound = (int) num;
 	int i;
 	
-	P(newSem);
 	for( i=0; i<upperBound; i++){
+	P(newSem);
 	safethreadcounter++;
+	V(newSem);
 	}
 
-	V(newSem);
 	V(tsem);
 }
 

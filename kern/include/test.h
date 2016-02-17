@@ -60,6 +60,9 @@ int threadtest6(int, char **);
 /*for thread test with lock*/
 int threadtest7(int, char **);
 
+/*for spinlock thread test*/
+int threadtest8(int, char **);
+
 /* lib tests */
 int arraytest(int, char **);
 int bitmaptest(int, char **);

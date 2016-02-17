@@ -98,6 +98,7 @@ SRCS+=$(KTOP)/test/threadfun.c
 SRCS+=$(KTOP)/test/threadfunc.c
 SRCS+=$(KTOP)/test/threadfunl.c
 SRCS+=$(KTOP)/test/threadfuns.c
+SRCS+=$(KTOP)/test/threadfunsl.c
 SRCS+=$(KTOP)/test/threadtest.c
 SRCS+=$(KTOP)/test/tt3.c
 SRCS+=$(KTOP)/test/uw-tests.c
