@@ -463,6 +463,7 @@ static const char *testmenu[] = {
 	"[tt5] Thread test 5		     ",
 	"[tt6] Thread test 6		     ",
 	"[tt7] Thread test 7		     ",
+	"[tt8] Thread test 8		     ",
 
 #if OPT_NET
 	"[net] Network test                  ",
@@ -581,6 +582,7 @@ static struct {
 	{ "tt5",	threadtest5 },
 	{ "tt6",	threadtest6 },
 	{ "tt7",	threadtest7 },
+	{ "tt8",	threadtest8 },
 
 	{ "sy1",	semtest },
 
